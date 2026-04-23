@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import logo from '../assets/logo.png';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
+    <header className="fixed top-0 w-full z-50 bg-white shadow-lg transition-all duration-300">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} alt="Crestaig Logo" className="h-10 w-auto" />

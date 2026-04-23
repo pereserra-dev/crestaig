@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span className="text-2xl">W</span>
+      <span className="text-2xl">💬</span>
     </a>
   );
 };
