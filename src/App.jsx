@@ -1,17 +1,17 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Products from './components/Products'
-import FeaturedSection from './components/FeaturedSection'
-import Gallery from './components/Gallery'
-import Reviews from './components/Reviews'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import WhatsAppButton from './components/WhatsAppButton'
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Products from './components/Products';
+import FeaturedSection from './components/FeaturedSection';
+import Gallery from './components/Gallery';
+import Reviews from './components/Reviews';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
-    <div className="App pt-24 sm:pt-28">
+    <div className="App min-h-screen bg-cream text-ink">
       <Header />
       <Hero />
       <About />
@@ -23,7 +23,7 @@ function App() {
       <Footer />
       <WhatsAppButton />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

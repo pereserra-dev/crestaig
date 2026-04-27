@@ -1,15 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#1a4d3a', // Verd fosc
-        secondary: '#f8f9fa', // Blanc
-        accent: '#d4a574', // Accent càlid
+        primary: '#173f31',
+        secondary: '#fbf8f1',
+        accent: '#c59754',
+        cream: '#f6f1e8',
+        ink: '#17231c',
+        muted: '#6f766d',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -17,4 +20,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

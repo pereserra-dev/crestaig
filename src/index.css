@@ -1,31 +1,56 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: 7rem;
 }
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  color: #1f2937;
+  color: #17231c;
   line-height: 1.6;
-  background: #f8fafc;
+  background: #f6f1e8;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 section {
   position: relative;
 }
 
+img {
+  max-width: 100%;
+}
+
 .fade-in {
   animation: fadeIn 0.8s ease-in-out;
+}
+
+.reveal-up {
+  animation: revealUp 0.7s ease-out both;
+}
+
+.reveal-up-delay {
+  animation: revealUp 0.7s ease-out 0.12s both;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
