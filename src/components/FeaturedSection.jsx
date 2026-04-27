@@ -3,24 +3,22 @@ import interiorLocal from '../assets/interior-local.png';
 
 const FeaturedSection = () => {
   return (
-    <section className="py-20 bg-primary text-white">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-1/2">
-            <img src={interiorLocal} alt="Interior Crestaig" className="w-full rounded-lg shadow-2xl" />
+    <section className="bg-primary text-white py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div className="order-2 lg:order-1">
+            <h2 className="text-3xl font-semibold sm:text-4xl">Tradició i qualitat des de 1950</h2>
+            <p className="mt-6 text-base leading-8 text-slate-100 sm:text-lg">
+              Des de fa més de setanta anys Crestaig és sinònim de qualitat i confiança a Sa Pobla. La nostra botiga combina la tradició amb una cura premium en cada producte.
+            </p>
+            <p className="mt-5 text-base leading-8 text-slate-100 sm:text-lg">
+              Treballem cada dia per mantenir viu l'esperit artesanal, seleccionant les millors matèries primeres i aplicant tècniques que garanteixen una experiència excepcional.
+            </p>
           </div>
-          <div className="lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-6">Tradició i qualitat des de 1950</h2>
-            <p className="text-lg mb-6">
-              Des de fa més de setanta anys, Crestaig és sinònim de qualitat i confiança a Sa Pobla.
-              La nostra botiga és un espai on la tradició es combina amb la passió per oferir el millor
-              producte als nostres clients.
-            </p>
-            <p className="text-lg">
-              Cada dia, treballem per mantenir viu l'esperit artesanal que ens caracteritza,
-              seleccionant les millors matèries primeres i aplicant tècniques tradicionals
-              que garanteixen un producte excepcional.
-            </p>
+          <div className="order-1 lg:order-2">
+            <div className="overflow-hidden rounded-[32px] bg-slate-900/10 shadow-2xl ring-1 ring-white/10">
+              <img src={interiorLocal} alt="Interior Crestaig" className="h-72 w-full object-cover sm:h-96" />
+            </div>
           </div>
         </div>
       </div>

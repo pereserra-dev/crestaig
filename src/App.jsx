@@ -11,7 +11,7 @@ import WhatsAppButton from './components/WhatsAppButton'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App pt-24 sm:pt-28">
       <Header />
       <Hero />
       <About />

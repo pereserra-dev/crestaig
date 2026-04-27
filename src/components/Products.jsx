@@ -6,37 +6,43 @@ const Products = () => {
   const products = [
     {
       title: 'Carn fresca seleccionada',
-      description: 'Les millors peces de carn, seleccionades amb cura per garantir la màxima qualitat i sabor.',
+      description: 'Les millors peces de carn seleccionades amb cura per garantir la màxima qualitat i sabor.',
       image: carns
     },
     {
       title: 'Embotits artesans',
-      description: 'Elaborats seguint receptes tradicionals mallorquines, amb ingredients locals i processos artesanals.',
+      description: 'Elaborats seguint receptes mallorquines i ingredients locals per un sabor autèntic.',
       image: sobrasades
     },
     {
-      title: 'Sobrassada',
-      description: 'La nostra especialitat: sobrassada mallorquina elaborada amb carn de porc local i espècies autèntiques.',
+      title: 'Sobrassada premium',
+      description: 'La nostra especialitat amb carn de porc local i espècies autèntiques.',
       image: sobrasades
     },
     {
       title: 'Elaborats propis',
-      description: 'Una selecció de productes elaborats a la nostra botiga, amb receptes familiars i ingredients frescos.',
+      description: 'Productes exclusius de la nostra botiga, cuinats amb receptes familiars i ingredients frescos.',
       image: carns
     }
   ];
 
   return (
-    <section id="producte" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-primary text-center mb-12">Els nostres productes</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section id="producte" className="bg-white py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-semibold text-primary sm:text-4xl">Els nostres productes</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+            Una selecció neta i premium que combina carns fresques i embotits artesans, amb una presentació cuidada per a cada paladar.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((product, index) => (
-            <div key={index} className="bg-secondary rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <img src={product.image} alt={product.title} className="w-full h-48 object-cover" />
+            <div key={index} className="rounded-[28px] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+              <img src={product.image} alt={product.title} className="h-56 w-full object-cover" />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-primary mb-3">{product.title}</h3>
-                <p className="text-gray-600">{product.description}</p>
+                <h3 className="text-lg font-semibold text-slate-900">{product.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{product.description}</p>
               </div>
             </div>
           ))}

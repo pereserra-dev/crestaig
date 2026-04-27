@@ -20,20 +20,26 @@ const Reviews = () => {
   ];
 
   return (
-    <section id="ressenyes" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-primary text-center mb-12">Ressenyes dels nostres clients</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+    <section id="ressenyes" className="bg-white py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-semibold text-primary sm:text-4xl">Ressenyes dels nostres clients</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+            Opinions reals que reflecteixen la confiança, la qualitat i el tracte proper de Crestaig.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
           {reviews.map((review, index) => (
-            <div key={index} className="bg-secondary p-6 rounded-lg shadow-lg">
-              <div className="flex mb-4">
+            <article key={index} className="rounded-[28px] border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+              <div className="flex items-center gap-2 text-accent text-lg">
                 {[...Array(review.rating)].map((_, i) => (
-                  <span key={i} className="text-accent text-xl">★</span>
+                  <span key={i}>★</span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-4">"{review.text}"</p>
-              <p className="font-semibold text-primary">- {review.name}</p>
-            </div>
+              <p className="mt-4 text-sm leading-7 text-slate-700">"{review.text}"</p>
+              <p className="mt-5 font-semibold text-slate-900">- {review.name}</p>
+            </article>
           ))}
         </div>
       </div>

@@ -2,19 +2,15 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-primary mb-8">Qui som</h2>
-          <p className="text-lg text-gray-700 mb-6">
-            A Crestaig, som una carnisseria artesanal de Sa Pobla dedicada a oferir productes de la màxima qualitat.
-            Des de fa generacions, treballem amb cura i passió per seleccionar les millors carns i elaborar embotits
-            tradicionals mallorquins.
+    <section id="about" className="bg-secondary py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-semibold text-primary sm:text-4xl">Qui som</h2>
+          <p className="mt-6 text-base leading-8 text-slate-700 sm:text-lg">
+            A Crestaig som una carnisseria artesanal de Sa Pobla que ofereix productes de qualitat superior amb una presentació moderna i molt cuidada.
           </p>
-          <p className="text-lg text-gray-700">
-            La nostra filosofia es basa en la qualitat, la tradició i el tracte proper als nostres clients.
-            Cada producte que oferim és fruit d'un procés artesanal que respecta les tècniques ancestrals
-            i utilitza ingredients locals de primera qualitat.
+          <p className="mt-4 text-base leading-8 text-slate-700 sm:text-lg">
+            Treballem amb cura i passió per seleccionar les millors carns i elaborar embotits tradicionals mallorquins. Tot el nostre procés combina tradició, proximitat i una cura exquisida pels detalls.
           </p>
         </div>
       </div>

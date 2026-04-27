@@ -15,13 +15,19 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="galeria" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-primary text-center mb-12">Galeria</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="galeria" className="bg-secondary py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-semibold text-primary sm:text-4xl">Galeria</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+            Espais i productes cuidats, fotografiats amb estil premium perquè la teva experiència sigui clara i atractiva.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {images.map((image, index) => (
-            <div key={index} className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <img src={image.src} alt={image.alt} className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+            <div key={index} className="overflow-hidden rounded-[28px] bg-white shadow-lg ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-2xl">
+              <img src={image.src} alt={image.alt} className="h-64 w-full object-cover transition duration-300 hover:scale-105" />
             </div>
           ))}
         </div>
