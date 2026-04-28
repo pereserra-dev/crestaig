@@ -34,20 +34,34 @@ const Header = () => {
         <button
           type="button"
           aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
           aria-label={menuOpen ? 'Tanca menú' : 'Obre menú'}
           onClick={() => setMenuOpen((prev) => !prev)}
           className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary/15 bg-white text-primary shadow-sm transition hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 md:hidden"
         >
           <span className="sr-only">Menú</span>
-          <div className="flex h-5 w-5 flex-col justify-between">
-            <span className={`block h-0.5 w-5 bg-primary transition-transform duration-300 ${menuOpen ? 'translate-y-2 rotate-45' : ''}`} />
-            <span className={`block h-0.5 w-5 bg-primary transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'}`} />
-            <span className={`block h-0.5 w-5 bg-primary transition-transform duration-300 ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`} />
+          <div className="relative h-5 w-5" aria-hidden="true">
+            <span
+              className={`absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 rounded-full bg-primary transition-all duration-300 ${
+                menuOpen ? '-translate-y-1/2 rotate-45' : '-translate-y-[7px]'
+              }`}
+            />
+            <span
+              className={`absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary transition-all duration-300 ${
+                menuOpen ? 'opacity-0' : 'opacity-100'
+              }`}
+            />
+            <span
+              className={`absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 rounded-full bg-primary transition-all duration-300 ${
+                menuOpen ? '-translate-y-1/2 -rotate-45' : 'translate-y-[5px]'
+              }`}
+            />
           </div>
         </button>
       </div>
 
       <div
+        id="mobile-menu"
         className={`absolute inset-x-4 top-full z-40 mt-2 overflow-hidden rounded-2xl border border-primary/10 bg-white shadow-2xl shadow-primary/15 transition-all duration-300 md:hidden ${
           menuOpen ? 'max-h-[520px] opacity-100' : 'max-h-0 opacity-0'
         }`}
