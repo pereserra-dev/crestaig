@@ -37,7 +37,20 @@ const Contact = () => {
               <p className="mt-4 text-sm leading-7 text-white/76">
                 <a href="tel:+34971123456" className="font-semibold text-white transition hover:text-accent">+34 971 12 34 56</a>
               </p>
-              <p className="mt-4 text-sm leading-7 text-white/76">Dilluns a dissabte<br />8:00 - 14:00 i 16:00 - 20:00</p>
+              <div className="mt-5 space-y-3 text-sm text-white/76">
+                <div>
+                  <p className="font-semibold text-white">Dilluns a divendres</p>
+                  <p className="mt-1 leading-6">8:30–13:30 · 17:00–20:00</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Dissabte</p>
+                  <p className="mt-1 leading-6">8:30–13:30</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Diumenge</p>
+                  <p className="mt-1 leading-6">Tancat</p>
+                </div>
+              </div>
 
               <div className="mt-8 flex gap-3">
                 <a href="#" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/8 transition hover:-translate-y-0.5 hover:bg-white/14">
