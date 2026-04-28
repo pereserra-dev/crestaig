@@ -27,8 +27,8 @@ const products = [
 
 const Products = () => {
   return (
-    <section id="productes" className="scroll-mt-28 bg-secondary py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <section className="bg-secondary py-20 sm:py-24">
+      <div id="productes" className="scroll-mt-24 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">Selecció</p>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight text-primary sm:text-5xl">Producte honest, presència premium.</h2>

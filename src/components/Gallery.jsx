@@ -14,8 +14,8 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section id="galeria" className="scroll-mt-28 bg-primary py-20 text-white sm:py-24">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <section className="bg-primary py-20 text-white sm:py-24">
+      <div id="galeria" className="scroll-mt-24 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">Galeria</p>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">El producte, sense artifici.</h2>

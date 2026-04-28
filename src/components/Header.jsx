@@ -3,6 +3,7 @@ import logo from '../assets/logo.png';
 
 const navLinks = [
   { href: '#inici', label: 'Inici' },
+  { href: '#qui-som', label: 'Qui som' },
   { href: '#productes', label: 'Productes' },
   { href: '#historia', label: 'Història' },
   { href: '#galeria', label: 'Galeria' },

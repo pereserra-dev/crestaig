@@ -3,8 +3,8 @@ import interiorLocal from '../assets/optimized/interior-local.jpg';
 
 const About = () => {
   return (
-    <section id="historia" className="scroll-mt-28 bg-cream py-20 sm:py-24">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-[0.92fr_1fr] lg:items-center lg:px-8">
+    <section className="bg-cream py-20 sm:py-24">
+      <div id="qui-som" className="scroll-mt-0 mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-[0.92fr_1fr] lg:items-center lg:px-8">
         <div className="overflow-hidden rounded-2xl bg-primary/5 shadow-2xl shadow-primary/10">
           <img
             src={interiorLocal}

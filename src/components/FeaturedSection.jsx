@@ -3,8 +3,8 @@ import interiorLocal from '../assets/optimized/interior-local.jpg';
 
 const FeaturedSection = () => {
   return (
-    <section className="scroll-mt-28 bg-primary py-20 text-white sm:py-24">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+    <section className="bg-primary py-20 text-white sm:py-24">
+      <div id="historia" className="scroll-mt-5 mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">Des de 1950</p>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Tradició, ofici i qualitat constant.</h2>

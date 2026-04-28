@@ -5,8 +5,8 @@ import whatsappLogo from '../assets/whatsapp-logo.png';
 
 const Contact = () => {
   return (
-    <section id="contacte" className="scroll-mt-28 bg-cream py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <section className="bg-cream py-20 sm:py-24">
+      <div id="contacte" className="scroll-mt-24 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-2xl bg-primary text-white shadow-2xl shadow-primary/20">
           <div className="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="p-8 sm:p-12 lg:p-16">
